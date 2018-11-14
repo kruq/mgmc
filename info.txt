@@ -1,0 +1,2 @@
+WP user: mgmcuser
+WP pass: pass@mgmc
