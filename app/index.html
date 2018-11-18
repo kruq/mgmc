@@ -10,28 +10,30 @@
 
 <body>
     <div>
-        <section class="menu small">
+        <section class="menu">
             <div class="wrapper-center">
                 <div class="left">
                     <div class="logo">
-                        <img class="regular" src="images/logo.png">
-                        <img class="small" src="images/logo_navy.png">
+                        <a href="#home">
+                            <img class="regular" src="images/logo.png">
+                            <img class="small" src="images/logo_navy.png">
+                        </a>
                     </div>
                 </div>
                 <div class="right">
                     <nav>
                         <ul>
                             <li>
-                                <a href="#" class="selected">Dofinansowanie</a>
+                                <a href="#dofinansowanie" class="selected">Dofinansowanie</a>
                             </li>
                             <li>
-                                <a href="#">Inwestycje</a>
+                                <a href="#inwestycje">Inwestycje</a>
                             </li>
                             <li>
-                                <a href="#">Warunki udziału</a>
+                                <a href="#warunki-udzialu">Warunki udziału</a>
                             </li>
                             <li>
-                                <a href="#">Jak uzyskać dotację</a>
+                                <a href="#jak-uzyskac-dotacje">Jak uzyskać dotację</a>
                             </li>
                         </ul>
                         <a class="btn-analysis">Bezpłatna analiza</a>
@@ -39,12 +41,12 @@
                 </div>
             </div>
         </section>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="wrapper-center">
                 <div class="container">
                     <div class="left">
                         <div class="logo">
-                            
+
                         </div>
                         <h1>Z naszą pomocą w 2019 r. uzyskasz dofinansowanie na poprawę warunków pracy w firmie.</h1>
                     </div>
@@ -53,7 +55,7 @@
         </section>
         <section class="funding">
             <div class="wrapper-center">
-                <h3 class="center">Dofinansowanie BHP</h3>
+                <h3 id="dofinansowanie" class="center">Dofinansowanie BHP</h3>
                 <p>Zakład Ubezpieczeń Społecznych systematycznie dofinansowuje projekty mające na celu poprawę warunków pracy
                     w firmach. Wysokość dofinansowania zależy od ilości zatrudnionych pracowników, a także zakresu inwestycji.</p>
                 <div class="flex">
@@ -168,7 +170,7 @@
         </section>
         <section class="investments">
             <div class="wrapper-center">
-                <h3 class="center">Przykładowe inwestycje</h3>
+                <h3 id="inwestycje" class="center">Przykładowe inwestycje</h3>
                 <div class="flex">
                     <div class="flex-item-3">
                         <div class="image-wrapper">
@@ -206,7 +208,7 @@
         </section>
         <section class="contest">
             <div class="wrapper-center">
-                <h3 class="semibold">Warunki udziału w konkursie</h3>
+                <h3 id="warunki-udzialu" class="semibold">Warunki udziału w konkursie</h3>
                 <h4>Do konkursu może przystąpić Wnioskodawca, który spełnia łącznie następujące warunki.</h4>
                 <ul>
                     <li>nie zalega z opłacaniem składek na ubezpieczenia społeczne i ubezpieczenia zdrowotne;</li>
@@ -222,7 +224,7 @@
         </section>
         <section class="obtain-funding">
             <div class="wrapper-center">
-                <h3 class="semibold center">Jak pozyskać dofinansowanie?</h3>
+                <h3 id="jak-uzyskac-dotacje" class="semibold center">Jak pozyskać dofinansowanie?</h3>
                 <div class="flex">
                     <div class="flex-item-3">
                         <img src="images/folder.png" />
@@ -319,5 +321,7 @@
         </section>
     </div>
 </body>
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/main.js" type="text/javascript"></script>
 
 </html>

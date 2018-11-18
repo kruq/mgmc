@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('fonts/MyriadPro-Regular.otf');
+    src: url('../fonts/MyriadPro-Regular.otf');
 }
 
 @font-face {
     font-family: 'Myriad Pro Semibold';
-    src: url('fonts/MyriadPro-Semibold.otf');
+    src: url('../fonts/MyriadPro-Semibold.otf');
 }
 
 html {
@@ -121,11 +121,11 @@ section.menu .logo img.small {
     display: none;
 }
 
-section.menu .logo img.regular {
+section.menu.small .logo img.regular {
     display: none;
 }
 
-section.menu .logo img.small {
+section.menu.small .logo img.small {
     display: inline;
 }
 
@@ -492,7 +492,7 @@ section.contact-form .contact .contact-line {
 .footer {
     width: 100%;
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     color: #fff;
 }
 
