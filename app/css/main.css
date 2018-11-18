@@ -1,0 +1,308 @@
+html {
+    font-size: 12px;
+    min-width: 1200px;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: #00233b;
+}
+
+h1 {
+    font-family: 'Cardo', serif;
+    font-size: 2.45rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 5rem;
+    color: white;
+}
+
+h3 {
+    font-size: 2.45rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h3.semibold {
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+}
+.flex {
+    display: flex;
+}
+
+.flex-item-3 {
+    width: 33%;
+}
+
+.flex-item-4 {
+    width: 25%;
+}
+
+.wrapper-center {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px; 
+}
+
+section {
+    display: block;
+    position: relative;
+}
+
+section.hero {
+    background-color: #00233b;
+    color: white;
+    height: 700px;
+    display: flex;    
+}
+
+section.hero .wrapper-center {
+    padding: 0px;
+}
+
+section.hero .wrapper-center .container {
+    background-image: url('../images/lighthouse.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-left: 370px;
+    height: 100%;
+    width: 100%;
+
+}
+
+section.hero .left {
+    width: 320px;
+    margin-left: -370px;
+    padding-left: 40px;
+    float: left;
+    padding-top: 40px;
+}
+
+section.hero .left h1 {
+    width: 230px;
+}
+
+section.hero div.logo {
+    margin-bottom: 100px;
+}
+
+section.hero .right {
+    float: left;
+    padding-top: 40px;
+}
+
+section.hero .right nav ul {
+    display: inline-block;
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+section.hero .right nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    /*border-bottom: 2px solid #00aeef;*/
+}
+
+section.hero .right nav ul li a {
+    font-weight: 500;
+}
+
+section.hero .right nav ul li a.selected:after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin-top: 10px;
+    margin-left: -10px;
+    background-color: #00aeef;
+}
+
+section.funding {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.funding .chart {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    margin: 80px auto;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    color: #00233b; 
+}
+
+section.funding .chart .text {
+    padding-top: 20px;;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+section.funding .chart .text .percentage {
+    font-size: 4.2rem;
+    font-weight: 600;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+section.funding .circle-light{
+    position: absolute;
+    top: 3;
+    left: 3;
+    border-style: solid;
+    border-width: 2px;
+    border-color: silver;
+    border-radius: 50%;
+    width: 93%;
+    height: 93%;
+}
+
+section.funding .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    transform-origin: center center;
+}
+
+section.funding .circle-half {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+section.funding .circle-quarter {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
+}
+
+section.funding .chart .white{
+    border-color: white;
+}
+
+section.funding .chart .color{
+    border-color: #00233b; 
+}
+
+section.funding .circle-plus{    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(4deg);
+}
+
+section.funding .circle-minus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-4deg);
+}
+
+section.funding .circle-90{
+    transform: rotate(144deg);
+}
+
+section.funding .circle-80{
+    transform: rotate(108deg);
+}
+
+section.funding .circle-60{
+    transform: rotate(36deg);
+}
+
+section.funding .circle-20{
+    transform: rotate(-126deg);
+}
+
+section.funding .amount {
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+
+section.means {
+    background-color: #eee;
+}
+
+section.contest {
+    font-size: 1.6rem;
+}
+
+section.references {
+    background: url('../images/references_bg.png') no-repeat top center;
+    background-size: cover;
+    padding: 45px;
+}
+
+section.contact-form {
+    background: url('../images/form_bg.png') no-repeat top center;
+    background-size: cover;
+    height: 636px;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+}
+
+
+.footer .wrapper-center {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.footer span.copyright {
+    color: #00aeef;
+}
+
+.btn-references {
+    text-transform: uppercase;
+    padding: 18px 30px;
+    background-color: #00233b;
+    color: #fff;
+    border-radius: 45px;   
+    margin: 40px;
+    display: inline-block;
+}
+
+.btn-analysis  {
+    padding: 6px 20px;
+    background-color: #00aeef;
+    color: #fff;
+    border-radius: 30px;   
+    margin-left: 20px;
+    display: inline-block;
+}
