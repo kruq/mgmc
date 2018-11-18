@@ -62,12 +62,18 @@ h4.semibold {
 input, textarea {
     background-color: white;
     font-family: 'Myriad Pro';
+    font-size: 1.5rem;
     border-radius: 30px;
     width: 100%;
+    padding: 17px 20px;
 }
 
 input {
     height: 40px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 .center {
@@ -278,6 +284,32 @@ section.funding .amount {
 
 section.means {
     background-color: #eee;
+    display: flex;  
+}
+
+section.means .wrapper-center {
+    padding: 0px;
+}
+
+section.means .wrapper-center .container {
+    background-image: url('../images/forklift_bg.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-left: 815px;
+    height: 595px;
+    width: 100%;
+
+}
+
+section.means .left {
+    width: 800px;
+    margin-left: -815px;
+    float: left;
+    padding-top: 20px;
+}
+
+section.means .left ul{
+    margin-top: 0px;
 }
 
 section.contest {
@@ -402,7 +434,7 @@ section.contact-form .contact .contact-header {
 }
 
 section.contact-form .contact .send-btn-wrapper {
-    margin-top: 180px;
+    margin-top: 190px;
 }
 
 section.contact-form .contact .contact-line {
