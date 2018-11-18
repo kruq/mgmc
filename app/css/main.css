@@ -243,7 +243,7 @@ section.funding .circle-60{
 }
 
 section.funding .circle-20{
-    transform: rotate(-126deg);
+    clip-path: polygon(50% 0%, 100% 0%, 100% 25%, 50% 50%);
 }
 
 section.funding .amount {
