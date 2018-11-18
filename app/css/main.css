@@ -103,6 +103,86 @@ section {
     position: relative;
 }
 
+section.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;    
+    padding-top: 40px;
+}
+
+section.menu .logo img.regular {
+    display: inline;
+}
+
+section.menu .logo img.small {
+    display: none;
+}
+
+section.menu .logo img.regular {
+    display: none;
+}
+
+section.menu .logo img.small {
+    display: inline;
+}
+
+section.menu.small {
+    background-color: white;
+    height: 100px;
+    padding-top: 20px;
+}
+
+section.menu .wrapper-center {
+    padding: 0px;
+}
+
+section.menu .left {
+    width: 330px;
+    padding-left: 40px;
+    float: left;
+}
+
+section.menu.small div.logo {
+    padding-top: 5px;
+    padding-left: 25px;
+}
+
+section.menu .right {
+    float: left;
+}
+
+section.menu .right nav ul {
+    display: inline-block;
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+section.menu .right nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+section.menu .right nav ul li a {
+    font-weight: 500;
+}
+
+section.menu .right nav ul li a.selected:after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin-top: 10px;
+    margin-left: -10px;
+    background-color: #00aeef;
+}
+
 section.hero {
     background-color: #00233b;
     color: white;
@@ -127,52 +207,18 @@ section.hero .wrapper-center .container {
 section.hero .left {
     width: 320px;
     margin-left: -370px;
-    padding-left: 40px;
+    padding-left: 50px;
     float: left;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 section.hero .left h1 {
     width: 230px;
+    font-size: 2.7rem;
 }
 
 section.hero div.logo {
     margin-bottom: 100px;
-}
-
-section.hero .right {
-    float: left;
-    padding-top: 40px;
-}
-
-section.hero .right nav ul {
-    display: inline-block;
-    list-style: none;
-    border-bottom: 1px solid black;
-    padding: 0px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-section.hero .right nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 0px;
-    /*border-bottom: 2px solid #00aeef;*/
-}
-
-section.hero .right nav ul li a {
-    font-weight: 500;
-}
-
-section.hero .right nav ul li a.selected:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    display: block;
-    margin-top: 10px;
-    margin-left: -10px;
-    background-color: #00aeef;
 }
 
 section.funding {
