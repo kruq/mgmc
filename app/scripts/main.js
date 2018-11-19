@@ -70,4 +70,4 @@ $('a[href*="#"]')
     });
 
 $(window).on('scroll', onScroll);
-$(document).ready(setCorrectMenu);
+$(document).ready(onScroll);
