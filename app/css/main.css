@@ -8,6 +8,7 @@
     src: url('../fonts/MyriadPro-Semibold.otf');
 }
 
+
 html {
     font-size: 12px;
     min-width: 1200px;
@@ -65,14 +66,11 @@ input, textarea {
     font-size: 1.5rem;
     border-radius: 30px;
     width: 100%;
-    padding: 17px 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
-input {
-    height: 40px;
-}
-
-textarea:focus, input:focus{
+textarea:focus, input:focus, button:focus{
     outline: none;
 }
 
@@ -111,6 +109,7 @@ section.menu {
     width: 100%;
     z-index: 999;    
     padding-top: 40px;
+    min-width: 1200px;
 }
 
 section.menu .logo img.regular {
@@ -171,11 +170,20 @@ section.menu .right nav ul li {
 
 section.menu .right nav ul li a {
     font-weight: 500;
+    padding-bottom: 40px;
+}
+
+section.menu .right nav ul li a:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    display: block;
+    margin-top: 10px;
 }
 
 section.menu .right nav ul li a.selected:after {
     content: '';
-    width: 30px;
+    width: 40px;
     height: 3px;
     display: block;
     margin-top: 10px;
@@ -255,8 +263,8 @@ section.funding .chart .text .percentage {
 
 section.funding .circle-light{
     position: absolute;
-    top: 3;
-    left: 3;
+    top: 3px;
+    left: 3px;
     border-style: solid;
     border-width: 2px;
     border-color: silver;
@@ -444,12 +452,14 @@ section.contact-form .form img {
     margin-right: 20px;
 }
 
-section.contact-form .form h1 {
+section.contact-form .form h3 {
     font-size: 1.9rem;
     color: white;
     display: inline;
     letter-spacing: 2;
     line-height: 3rem;
+    font-family: 'Cardo', serif;
+    font-weight: bold;
 }
 
 section.contact-form .contact {
@@ -494,6 +504,7 @@ section.contact-form .contact .contact-line {
     position: absolute;
     bottom: 25px;
     color: #fff;
+    margin-left: 25px;
 }
 
 .footer .wrapper-center {
