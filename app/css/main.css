@@ -248,95 +248,40 @@ section.funding .chart {
     font-size: 1.3rem;
     line-height: 2.2rem;
     margin: 80px auto;
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
     position: relative;
     color: #00233b; 
+    fill: none;
+    stroke-width: 1.5;
 }
 
-section.funding .chart .text {
-    padding-top: 20px;;
-    position: relative;
-    display: block;
-    width: 100%;
+section.funding .circular-chart .grey {
+    fill: none;
+    stroke: silver;
+    stroke-width: .3;
 }
 
-section.funding .chart .text .percentage {
-    font-size: 4.2rem;
+section.funding .circular-chart .white {
+    stroke: white;
+}
+
+section.funding .circular-chart .circle {
+    stroke-width: 1.1;
+    stroke: #00233b;
+}
+
+section.funding .circular-chart .text {
+    font-size: 0.2rem;
+    fill: #00233b;
+    text-anchor: middle;
+}
+
+section.funding .circular-chart .percentage {
+    font-size: 0.6rem;
+    fill: #00233b;
     font-weight: 600;
-    position: relative;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
-section.funding .circle-light{
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: silver;
-    border-radius: 50%;
-    width: 93%;
-    height: 93%;
-}
-
-section.funding .circle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-style: solid;
-    border-width: 8px;
-    border-radius: 50%;
-    width: 96%;
-    height: 96%;
-    transform-origin: center center;
-}
-
-section.funding .circle-half {
-    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
-}
-
-section.funding .circle-quarter {
-    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
-}
-
-section.funding .chart .white{
-    border-color: white;
-}
-
-section.funding .chart .color{
-    border-color: #00233b; 
-}
-
-section.funding .circle-plus{    
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotate(4deg);
-}
-
-section.funding .circle-minus {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotate(-4deg);
-}
-
-section.funding .circle-90{
-    transform: rotate(144deg);
-}
-
-section.funding .circle-80{
-    transform: rotate(108deg);
-}
-
-section.funding .circle-60{
-    transform: rotate(36deg);
-}
-
-section.funding .circle-20{
-    clip-path: polygon(50% 0%, 100% 0%, 100% 25%, 50% 50%);
+    text-anchor: middle;
 }
 
 section.funding .amount {
