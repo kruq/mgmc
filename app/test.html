@@ -10,26 +10,77 @@
     margin: 50px;
     width: 220px;
     height: 220px;
-    background-color: antiquewhite;
 }
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: .5;
+}
+
 .circle {
-    position: absolute;
-    top: 50%;
-    background-color: aqua;
-    border: 1px solid black;
-    border-radius: 50%;
+  fill: none;
+  stroke-width: 1.5;
+  animation: progress 1s ease-out forwards;
 }
-.circle.light {
-    width: 95%;
-    height: 95%;
-    border-color: silver;
+
+.circular-chart.orange .circle-white {
+  stroke: white;
 }
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
 </style>
 <div class="container">
 
 </div>
 
 <div class="chart">
-    <div class="circle"></div>
-    
+    <div class="circle">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                    <path class="circle-bg"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path class="circle-white"
+                    stroke-dasharray="21, 78"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                    <path class="circle"
+                    stroke-dasharray="20, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+            </svg>
+    </div>
 </div>
+
+<div class="chart">
+        <div class="circle">
+                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle-white"
+                        stroke-dasharray="31, 68"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                        <path class="circle"
+                        stroke-dasharray="30, 100"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                </svg>
+        </div>
+    </div>

@@ -8,6 +8,10 @@
     src: url('../fonts/MyriadPro-Semibold.otf');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 html {
     font-size: 12px;
@@ -67,7 +71,6 @@ input, textarea {
     border-radius: 30px;
     width: 100%;
     padding: 10px 20px;
-    box-sizing: border-box;
 }
 
 textarea:focus, input:focus, button:focus{
@@ -142,6 +145,7 @@ section.menu .left {
     width: 330px;
     padding-left: 40px;
     float: left;
+    margin-right: 50px;
 }
 
 section.menu.small div.logo {
@@ -150,6 +154,10 @@ section.menu.small div.logo {
 }
 
 section.menu .right {
+    float: left;
+}
+
+section.menu .right nav {
     float: left;
 }
 
@@ -280,8 +288,8 @@ section.funding .circle{
     border-style: solid;
     border-width: 8px;
     border-radius: 50%;
-    width: 90%;
-    height: 90%;
+    width: 96%;
+    height: 96%;
     transform-origin: center center;
 }
 
@@ -533,9 +541,11 @@ section.contact-form .contact .contact-line {
     color: #fff;
     border-radius: 30px;   
     margin-left: 20px;
-    display: inline-block;
+    display: block;
     font-size: 1.5rem;
     line-height: 2.75rem;
+    float: right;
+    margin-top: 20px;
 }
 
 .btn-send  {
