@@ -342,8 +342,8 @@ section.investments .flex-item-3 .image-wrapper {
 section.investments .flex-item-3 .image-wrapper .line {
     vertical-align: top;
     margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 section.references {
