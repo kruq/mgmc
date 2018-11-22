@@ -1,31 +1,20 @@
-@font-face {
-    font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadPro-Regular.otf');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Semibold';
-    src: url('../fonts/MyriadPro-Semibold.otf');
-}
-
 * {
     box-sizing: border-box;
 }
 
-
 html {
     font-size: 12px;
-    min-width: 1200px;
-    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     margin: 0px;
     padding: 0px;
     font-family: 'Myriad Pro','Open Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 2.75rem;
 }
+
 
 a {
     text-decoration: none;
@@ -64,6 +53,10 @@ h4.semibold {
     font-family: 'Myriad Pro Semibold';
 }
 
+ul {
+    padding: 0px 20px;
+}
+
 input, textarea {
     background-color: white;
     font-family: 'Myriad Pro';
@@ -80,6 +73,7 @@ textarea:focus, input:focus, button:focus{
 .center {
     text-align: center;
 }
+
 .flex {
     display: flex;
 }
@@ -103,6 +97,7 @@ section {
     display: block;
     position: relative;
 }
+
 
 section.menu {
     display: flex;
@@ -216,7 +211,6 @@ section.hero .wrapper-center .container {
     margin-left: 370px;
     height: 100%;
     width: 100%;
-
 }
 
 section.hero .left {
@@ -231,11 +225,9 @@ section.hero .left h1 {
     width: 230px;
     font-size: 2.7rem;
     color: #00aeef;
+    margin-top: 100px;
 }
 
-section.hero div.logo {
-    margin-bottom: 100px;
-}
 
 section.funding {
     text-align: center;
@@ -312,15 +304,10 @@ section.means .left {
     width: 800px;
     margin-left: -815px;
     float: left;
-    padding-top: 20px;
 }
 
 section.means .left ul{
     margin-top: 0px;
-}
-
-section.contest {
-    font-size: 1.6rem;
 }
 
 section.investments {
@@ -337,19 +324,25 @@ section.investments .flex-item-3 .image-wrapper {
     margin-top: 40px;
     margin-bottom: 60px;
     clear: left;
+    background-image: url('../images/line.png');
+    background-repeat: repeat-x;
+    background-position: center center;
+    padding: 15px;
 }
 
-section.investments .flex-item-3 .image-wrapper .line {
-    vertical-align: top;
-    margin-top: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
+section.investments .flex-item-3 .image-wrapper img {
+    background-color: white;
+    padding: 15px;
 }
 
 section.references {
     background: url('../images/references_bg.png') no-repeat top center;
     background-size: cover;
     padding: 45px;
+}
+
+section.contest {
+    font-size: 1.6rem;
 }
 
 section.obtain-funding {
@@ -372,13 +365,13 @@ section.obtain-funding .flex-item-3 h4{
 section.contact-form {
     background: url('../images/form_bg.png') no-repeat top center;
     background-size: cover;
-    height: 636px;
 }
 
 section.contact-form label {
     font-family: 'Myriad Pro Semibold';
     color: #00aeef;
     margin-left: 15px;
+    display: block;
 }
 
 section.contact-form .form {
@@ -409,7 +402,7 @@ section.contact-form .form h3 {
     font-size: 1.9rem;
     color: white;
     display: inline;
-    letter-spacing: 2;
+    letter-spacing: 0.04em;
     line-height: 3rem;
     font-family: 'Cardo', serif;
     font-weight: bold;
@@ -430,7 +423,6 @@ section.contact-form .contact h1 {
     margin-left: 20px;
     color: white;
     display: inline;
-    letter-spacing: 2;
 }
 
 section.contact-form .contact label {
@@ -438,12 +430,22 @@ section.contact-form .contact label {
     width: 100px;
 }
 
+section.contact-form .contact.flex {
+    flex-direction: column;
+}
+
 section.contact-form .contact .contact-header {
     margin-bottom: 70px;
+    order: 1;
+}
+
+section.contact-form .contact .contact-lines-wrapper {
+    order: 2;
 }
 
 section.contact-form .contact .send-btn-wrapper {
-    margin-top: 190px;
+    margin-top: 150px;
+    order: 3;
 }
 
 section.contact-form .contact .contact-line {
@@ -454,29 +456,16 @@ section.contact-form .contact .contact-line {
 
 .footer {
     width: 100%;
-    position: absolute;
-    bottom: 25px;
     color: #fff;
-    margin-left: 25px;
+    background-color: #00233bcc;
 }
 
 .footer .wrapper-center {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 20px 0px 20px 60px;;
 }
 
 .footer span.copyright {
     color: #00aeef;
-}
-
-.btn-references {
-    text-transform: uppercase;
-    padding: 18px 30px;
-    background-color: #00233b;
-    color: #fff;
-    border-radius: 45px;   
-    margin: 40px;
-    display: inline-block;
 }
 
 .btn-analysis  {
@@ -504,4 +493,186 @@ section.contact-form .contact .contact-line {
     display: inline-block;
     font-size: 1.5rem;
     line-height: 2.75rem;
+}
+
+
+@media all and (max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .flex-item-3 {
+        width: 100%;
+    }
+    .flex-item-4 {
+        width: 100%;
+    }    
+    .wrapper-center {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 15px; 
+    }   
+    section.menu {
+        padding-top: 20px;
+    }
+    section.menu .right {
+        display: none;
+    }
+
+    section.hero {
+        height: auto;
+    }
+
+    section.hero .wrapper-center .container {
+        padding-left: 0px;
+        margin-left: 0px;
+        height: auto;
+    }
+
+    section.hero .left {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        float: none;
+    }
+
+    section.hero .left h1 {
+        width: 100%;
+        font-size: 2.3rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #00233b;
+        margin-top: 100%;
+        padding: 25px;
+        color: white;
+    }
+    
+    section.funding .chart {
+        margin-bottom: 20px;
+    }
+    
+    section.means .wrapper-center .container {
+        margin-left: 0px;
+        height: auto;
+        width: 100%;
+        background-image: none;
+    }
+
+    section.means .left {
+        width: auto;
+        margin-left: 0px;
+        float: none;
+        padding: 20px 15px 0px 15px;
+    }
+
+    section.investments .flex-item-3 {
+        margin: 20px 0px;
+        padding: 0px 15px;
+        font-size: 2rem;
+    }
+
+    section.investments .flex-item-3 .image-wrapper .line {
+        vertical-align: top;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    section.investments .flex-item-3 .image-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: none;
+    }    
+
+    section.references {
+        padding: 0px;
+    }
+
+    section.obtain-funding .flex-item-3 {
+        margin: 15px 0px 25px 0px;
+    }
+
+    section.obtain-funding .flex-item-3 h4{
+        margin: 30px 0px;
+    }
+
+    section.contact-form {
+        height: auto;
+    }
+
+    section.contact-form .form {
+        order: 1;
+        margin: 0px;
+        width: 100%;
+    }
+
+    section.contact-form .form img {
+        float: right;
+        margin-right: 0px;
+    }
+    section.contact-form .form .half-column {
+        width: 48%;
+    }
+
+    section.contact-form .form .flex.row {
+        flex-direction: row;
+    }
+
+    input, textarea {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+
+    section.contact-form .contact {
+        order: 2;
+        margin: 20px 0px 0px 0px ;
+        width: 100%;
+    }
+
+    section.contact-form .contact img {
+        float: right;
+        margin-right: 0px;
+    }
+
+    section.contact-form .contact h1 {
+        margin-left: 0px;
+    }
+
+    section.contact-form .contact .contact-header {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        order: 2;
+    }
+
+    section.contact-form .contact .contact-lines-wrapper {
+        order: 3;   
+    }
+    
+    section.contact-form .contact .send-btn-wrapper {
+        margin-top: 0px;
+        order: 1;
+    }
+    
+    section.contact-form .contact .contact-line {
+        margin-top: 10px;
+        font-family: 'Myriad Pro Semibold';
+        color: white;
+    }
+
+    .footer .wrapper-center {
+        padding: 10px 15px 10px 15px;;
+    }    
+
+    .btn-send  {
+        margin-top:-200px;
+        margin-left: 0px;
+    }
 }
