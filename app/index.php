@@ -249,7 +249,7 @@
         </section>
         <section class="contact-form">
             <div class="wrapper-center">
-                <form id="contact-form" action="#bezplatna-analiza" method="POST">
+                <form id="contact-form" action="index.php#bezplatna-analiza" method="POST">
                     <div class="flex">
                         <div class="form">
                             <div class="form-header">
