@@ -528,14 +528,16 @@ section.contact-form .contact .contact-line {
         height: auto;
     }
     section.menu .left {
-        float: none;
-        width: 100%;
-        padding-left: 0px;
+        width: 50%;
+        padding:10px;
         margin-right: 0px;
     }
     section.menu .left .logo {
         padding: 0px;
         text-align: center;
+    }
+    section.menu .left .logo img {
+        height: 50px;
     }
     section.menu.small {
         padding: 10px 0px;
@@ -544,22 +546,27 @@ section.contact-form .contact .contact-line {
         padding: 0px;
         text-align: center;
     }
-    section.menu.small .left .logo img {
-        height: 40px;
-    }
     section.menu .right {
+        width: 50%;
+        padding:10px;
+        font-size: 1rem;
+    } 
+    section.menu .right nav{
         display: none;
+    }
+    .btn-analysis  {
+        font-size: 1.1rem;
+        padding: 3px 10px;
+        margin-top: 5px;
     }
     section.hero {
         height: auto;
     }
-
     section.hero .wrapper-center .container {
         padding-left: 0px;
         margin-left: 0px;
         height: auto;
     }
-
     section.hero .left {
         width: 100%;
         text-align: center;
