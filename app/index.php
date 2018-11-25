@@ -1,12 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <title>MGM Consulting</title>
@@ -268,10 +264,10 @@
                                 </div>
                                 <div class="flex row">
                                     <div class="half-column">
-                                        <input type="text">
+                                        <input type="text" id="company" name="company">
                                     </div>
                                     <div class="half-column">
-                                        <input type="text">
+                                        <input type="text" id="name" name="name">
                                     </div>
                                 </div>
                                 <div class="flex row">
@@ -284,17 +280,46 @@
                                 </div>
                                 <div class="flex row">
                                     <div class="half-column">
-                                        <input type="text">
+                                        <input type="email" id="email" name="email">
                                     </div>
                                     <div class="half-column">
-                                        <input type="text">
+                                        <input type="tel" id="phone" name="phone">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label>Planowane inwestycje poprawiające bezpieczeństwo pracy</label>
+                                    <label>Planowane inwestycje poprawiające bezpieczeństwo pracy:</label>
                                 </div>
                                 <div class="row">
-                                    <textarea rows="4"></textarea>
+                                    <textarea rows="4" id="message" name="message"></textarea>
+                                    <?php
+
+                                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+                                        try {
+                                            $from_company = $_POST["company"];
+                                            $from_email = $_POST["email"];
+                                            $from_user = $_POST["name"];
+                                            $message = preg_replace("/[\r\n]+/", "\n", $_POST["message"]);
+
+                                            $body = "Firma: " . $from_company . "\n\n";
+                                            $body .= "Imię i nazwisko: " . $from_user . "\n\n";
+                                            $body .= "Telefon: " . $_POST["phone"] . "\n\n";
+                                            $body .= "E-mail: " . $from_email . "\n\n";
+                                            $body .= "Treść wiadomości: \n" . $message;
+
+                                            $headers = "From: $from_company - $from_user <$from_email>\r\n". 
+                                                    "MIME-Version: 1.0" . "\r\n" . 
+                                                    "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
+
+                                            $subject = "Zapytanie ze strony dotacja-zus.pl";
+
+                                            mail("strona@mgmc.info", $subject, $body, $headers);
+                                            echo "<span class='alert'>Wiadomość email została poprawnie wysłana.</span>";
+                                        } catch(Exception $e) {
+                                            echo "<span class='alert'>Niestety, nie udało się wysłać wiadomości. Spróbuj ponownie.</span>";
+                                        }
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>
@@ -324,5 +349,6 @@
         
         <script src="scripts/jquery.min.js" type="text/javascript"></script>
         <script src="scripts/main.js" type="text/javascript"></script>
+
   </body>
 </html>

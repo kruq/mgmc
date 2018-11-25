@@ -71,3 +71,4 @@ $('a[href*="#"]')
 
 $(window).on('scroll', onScroll);
 $(document).ready(onScroll);
+setTimeout("$('span.alert').hide('slow');", 3000);

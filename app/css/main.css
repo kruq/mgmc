@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    src: url('../fonts/MyriadPro-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -87,17 +102,17 @@ textarea:focus, input:focus, button:focus{
 }
 
 .wrapper-center {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 40px; 
+    max-width: 1200px;
 }
 
 section {
     display: block;
     position: relative;
 }
-
 
 section.menu {
     display: flex;
@@ -107,7 +122,12 @@ section.menu {
     width: 100%;
     z-index: 999;    
     padding-top: 40px;
+}
+
+section.menu .wrapper-center {
+    padding: 0px;
     min-width: 1200px;
+    width: 1200px;
 }
 
 section.menu .logo img.regular {
@@ -130,10 +150,6 @@ section.menu.small {
     background-color: white;
     height: 100px;
     padding-top: 20px;
-}
-
-section.menu .wrapper-center {
-    padding: 0px;
 }
 
 section.menu .left {
@@ -202,6 +218,7 @@ section.hero {
 
 section.hero .wrapper-center {
     padding: 0px;
+    width: 1200px;
 }
 
 section.hero .wrapper-center .container {
@@ -228,7 +245,6 @@ section.hero .left h1 {
     margin-top: 100px;
 }
 
-
 section.funding {
     text-align: center;
     margin-bottom: 40px;
@@ -239,9 +255,8 @@ section.funding .chart {
     text-align: center;
     font-size: 1.3rem;
     line-height: 2.2rem;
-    margin: 80px auto;
-    width: 260px;
-    height: 260px;
+    margin: 20% auto;
+    width: 90%;
     position: relative;
     color: #00233b; 
     fill: none;
@@ -288,22 +303,24 @@ section.means {
 
 section.means .wrapper-center {
     padding: 0px;
+    width: 1200px;
 }
 
 section.means .wrapper-center .container {
     background-image: url('../images/forklift_bg.png');
     background-position: left top;
     background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 815px;
-    height: 595px;
+    height: 100%;
     width: 100%;
-
 }
 
 section.means .left {
     width: 800px;
     margin-left: -815px;
     float: left;
+    padding: 0px 10px 0px 40px;
 }
 
 section.means .left ul{
@@ -370,6 +387,13 @@ section.contact-form {
 section.contact-form label {
     font-family: 'Myriad Pro Semibold';
     color: #00aeef;
+    margin-left: 15px;
+    display: block;
+}
+
+section.contact-form .alert {
+    font-family: 'Myriad Pro Semibold';
+    color: #ef00ae;
     margin-left: 15px;
     display: block;
 }
@@ -496,8 +520,142 @@ section.contact-form .contact .contact-line {
     line-height: 2.75rem;
 }
 
+@media all and (max-width: 1200px) {
+    section.menu {
+        padding-top: 20px;
+        min-width: 0px;
+    }
+    section.menu .wrapper-center {
+        width: 100%;
+        min-width: 0px;
+    }
+    section.menu.small {
+        height: auto;
+    }
+    section.menu .left {
+        width: auto;
+        padding: 10px 50px;
+        margin-right: 0px;
+    }
+    section.menu .left .logo {
+        padding: 0px;
+        text-align: center;
+    }
+    section.menu.small {
+        padding: 10px 0px;
+    }
+    section.menu.small .left .logo {
+        padding: 0px;
+        text-align: center;
+    }
+    section.menu .right {
+        width: auto;
+        float: right;
+        padding:10px;
+        font-size: 1rem;
+    }  
+    section.menu .right nav{
+        display: none;
+    }
+    .btn-analysis  {
+        font-size: 1.1rem;
+        padding: 3px 10px;
+        margin-top: 5px;
+    }
+    section.hero {
+        height: auto;
+    }
+    section.hero .left h1{
+        padding: 0px 10px 50px 0px;
+    }
+    section.hero .wrapper-center {
+        width: 100%;
+    }
+    section.means .wrapper-center {
+        width: 100%;
+    }   
+    section.funding .amount {
+        font-size: 3.5vw;
+    }
+    section.contact-form {
+        height: auto;
+    }
+    section.contact-form .flex {
+        flex-direction: column;
+    }
 
-@media all and (max-width: 600px) {
+    section.contact-form .form {
+        order: 1;
+        margin: 0px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    section.contact-form .form img {
+        float: right;
+        margin-right: 0px;
+    }
+    section.contact-form .form .half-column {
+        width: 48%;
+    }
+
+    section.contact-form .form .flex.row {
+        flex-direction: row;
+    }
+
+    input, textarea {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+
+    section.contact-form .contact {
+        order: 2;
+        margin: 20px 0px 0px 0px ;
+        width: 100%;
+    }
+
+    section.contact-form .contact img {
+        float: right;
+        margin-right: 0px;
+    }
+
+    section.contact-form .contact h1 {
+        margin-left: 0px;
+    }
+
+    section.contact-form .contact .contact-header {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        order: 2;
+    }
+
+    section.contact-form .contact .contact-lines-wrapper {
+        order: 3;   
+    }
+    
+    section.contact-form .contact .send-btn-wrapper {
+        margin-top: 0px;
+        order: 1;
+    }
+    
+    section.contact-form .contact .contact-line {
+        margin-top: 10px;
+        font-family: 'MyriadProSemibold';
+        color: white;
+    }
+
+    .footer .wrapper-center {
+        padding: 10px 15px 10px 15px;;
+    }    
+
+    .btn-send  {
+        margin-top:-200px;
+        margin-left: 0px;
+    }
+}
+
+
+@media all and (max-width: 650px) {
     html {
         font-size: 11px;
     }
@@ -528,7 +686,6 @@ section.contact-form .contact .contact-line {
         height: auto;
     }
     section.menu .left {
-        width: 50%;
         padding:10px;
         margin-right: 0px;
     }
@@ -537,7 +694,7 @@ section.contact-form .contact .contact-line {
         text-align: center;
     }
     section.menu .left .logo img {
-        height: 50px;
+        height: 15vw;
     }
     section.menu.small {
         padding: 10px 0px;
@@ -547,7 +704,6 @@ section.contact-form .contact .contact-line {
         text-align: center;
     }
     section.menu .right {
-        width: 50%;
         padding:10px;
         font-size: 1rem;
     } 
@@ -588,6 +744,12 @@ section.contact-form .contact .contact-line {
     
     section.funding .chart {
         margin-bottom: 20px;
+        width: 50%;
+        height: 50%;
+    }
+    
+    section.funding .amount {
+        font-size: 3.3rem;
     }
     
     section.means .wrapper-center .container {
