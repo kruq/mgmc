@@ -313,7 +313,7 @@
 
                                             $subject = "Zapytanie ze strony dotacja-zus.pl";
 
-                                            mail("strona@mgmc.info", $subject, $body, $headers);
+                                            mail("zus@dotacja-zus.pl", $subject, $body, $headers);
                                             echo "<span class='alert'>Wiadomość email została poprawnie wysłana.</span>";
                                         } catch(Exception $e) {
                                             echo "<span class='alert'>Niestety, nie udało się wysłać wiadomości. Spróbuj ponownie.</span>";
