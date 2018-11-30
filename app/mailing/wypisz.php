@@ -58,7 +58,7 @@
 //    $mail_do_subskrypcji = 'adres@anomail.pl';	// to jest przyklad
 //
 
-$mail_do_subskrypcji = 'WPISZ_SWOJ_EMAIL';	// UZUPELNIJ ZACHOWUJAC APOSTROFY I SREDNIK NA KONCU
+$mail_do_subskrypcji = 'wspolpraca@dotacja-zus.pl';	// UZUPELNIJ ZACHOWUJAC APOSTROFY I SREDNIK NA KONCU
 
 //    Tu wpisz linki do strony z potwierdzeniem wypisania np. "ok.html"
 //    W przypadku podania blednego maila do wypisania wyswietli sie strona "no.html"
