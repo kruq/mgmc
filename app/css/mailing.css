@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    src: url('../fonts/MyriadPro-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Myriad Pro','Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: #00233b;
+}
+
+h1 {
+    font-family: 'Cardo', serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 5rem;
+    color: white;
+}
+
+h3 {
+    font-size: 2.45rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h3.semibold {
+    font-family: 'Myriad Pro Semibold';
+}
+
+h4.semibold {
+    font-family: 'Myriad Pro Semibold';
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+    color: #00233b;
+}
+
+section.blue {
+    background-color: #00233b;
+    color: white;
+    padding-top: 50px;
+}

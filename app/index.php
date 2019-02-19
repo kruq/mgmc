@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <title>MGM Consulting</title>
+    <title>Dotacja ZUS</title>
   </head>
   <body>
         <section class="menu">
@@ -313,7 +313,7 @@
 
                                             $subject = "Zapytanie ze strony dotacja-zus.pl";
 
-                                            mail("strona@mgmc.info", $subject, $body, $headers);
+                                            mail("zus@dotacja-zus.pl", $subject, $body, $headers);
                                             echo "<span class='alert'>Wiadomość email została poprawnie wysłana.</span>";
                                         } catch(Exception $e) {
                                             echo "<span class='alert'>Niestety, nie udało się wysłać wiadomości. Spróbuj ponownie.</span>";
@@ -332,7 +332,7 @@
                                 <div class="contact-line">
                                     <label>Telefon</label>695 679 730</div>
                                 <div class="contact-line">
-                                    <label>E-mail</label>zus@mgmc.pl</div>
+                                    <label>E-mail</label>zus@dotacja-zus.pl</div>
                             </div>
                             <div class="send-btn-wrapper">
                                 <button type="submit" class="btn-send">Wyślij</button>
