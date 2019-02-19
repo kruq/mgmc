@@ -401,7 +401,8 @@ section.contact-form .alert {
 section.contact-form .form {
     order: 1;
     margin: 20px;
-    width: 60%;
+    width: 55%;
+    color: white;
 }
 
 section.contact-form .form .form-header {
@@ -435,7 +436,6 @@ section.contact-form .form h3 {
 section.contact-form .contact {
     order: 2;
     margin: 20px;
-    width: 33%;
 }
 
 section.contact-form .contact img {
@@ -459,23 +459,53 @@ section.contact-form .contact.flex {
 }
 
 section.contact-form .contact .contact-header {
-    margin-bottom: 70px;
+    margin-bottom: 25px;
     order: 1;
 }
 
 section.contact-form .contact .contact-lines-wrapper {
     order: 2;
+    margin: 57px auto 0 auto;
+    flex-direction: column;
+}
+
+section.contact-form .contact .contact-lines-wrapper .flex-item-2 {
+    width: auto;
 }
 
 section.contact-form .contact .send-btn-wrapper {
-    margin-top: 150px;
+    margin-top: 20px;
     order: 3;
 }
 
 section.contact-form .contact .contact-line {
-    margin-top: 30px;
+    margin-top: 5px;
     font-family: 'Myriad Pro Semibold';
     color: white;
+}
+
+section.contact-form .contact .contact-line span.white, 
+section.contact-form .contact .contact-line a,
+section.contact-form .contact .contact-line a:hover {
+    color: white;
+}
+
+section.contact-form .contact .contact-line.phone {
+    margin-top: 4rem;
+}
+
+section.contact-form .rodo {
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+section.contact-form .rodo a {
+    color: white;
+}
+
+section.contact-form .rodo a:hover {
+    color: #00aeef;
 }
 
 .footer {
@@ -489,8 +519,17 @@ section.contact-form .contact .contact-line {
     padding: 20px 0px 20px 60px;;
 }
 
+.footer .wrapper-center .flex .flex-item-2 {
+    margin-top: 10px;
+}
+
 .footer span.copyright {
     color: #00aeef;
+}
+
+.footer .logos img{
+    margin: 0 10px;
+    float: right;
 }
 
 .btn-analysis  {
@@ -631,31 +670,34 @@ section.contact-form .contact .contact-line {
 
     section.contact-form .contact .contact-lines-wrapper {
         order: 3;   
+        margin: 22px;
+        flex-direction: row;
+    }
+
+    section.contact-form .contact .contact-lines-wrapper .flex-item-2 {
+        width: 50%;
     }
     
     section.contact-form .contact .send-btn-wrapper {
         margin-top: 0px;
         order: 1;
     }
-    
-    section.contact-form .contact .contact-line {
-        margin-top: 10px;
-        font-family: 'MyriadProSemibold';
-        color: white;
-    }
 
-    .footer .wrapper-center {
+    .footer .wrapper-center{
         padding: 10px 15px 10px 15px;;
-    }    
+    }   
+        
+    .footer .wrapper-center .flex {
+        flex-direction: row;
+     }
 
     .btn-send  {
-        margin-top:-200px;
         margin-left: 0px;
     }
 }
 
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 750px) {
     html {
         font-size: 11px;
     }
@@ -824,7 +866,6 @@ section.contact-form .contact .contact-line {
         font-size: 1.2rem;
         padding: 10px 15px;
     }
-
     section.contact-form .contact {
         order: 2;
         margin: 20px 0px 0px 0px ;
@@ -848,13 +889,20 @@ section.contact-form .contact .contact-line {
 
     section.contact-form .contact .contact-lines-wrapper {
         order: 3;   
+        flex-direction: column;
+        margin: 22px auto 0 auto;;
+    }
+        
+    section.contact-form .contact .contact-lines-wrapper .flex-item-2 {
+        width: auto;
     }
     
     section.contact-form .contact .send-btn-wrapper {
         margin-top: 0px;
         order: 1;
+
     }
-    
+
     section.contact-form .contact .contact-line {
         margin-top: 10px;
         font-family: 'Myriad Pro Semibold';
@@ -863,10 +911,17 @@ section.contact-form .contact .contact-line {
 
     .footer .wrapper-center {
         padding: 10px 15px 10px 15px;;
-    }    
+    } 
 
-    .btn-send  {
-        margin-top:-200px;
-        margin-left: 0px;
+    .footer .wrapper-center .flex{
+        flex-direction: column;
+    }
+
+    .footer .wrapper-center .flex .flex-item-2 {
+        width: auto;
+    }
+        
+    .footer .logos img {
+        float: none;
     }
 }

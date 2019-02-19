@@ -321,6 +321,10 @@
                                     }
                                     ?>
                                 </div>
+                                <div class="rodo">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych przez MGMC sp. z&nbsp;o.o., ul. Żołnierzy i&nbsp;Armii Wojska Polskiego 10, lok. B6,
+81-383 Gdynia w&nbsp;celu i&nbsp;w zakresie niezbędnym do realizacji obsługi niniejszego zgłoszenia. Zapoznałem się z&nbsp;treścią informacji o&nbsp;sposobie przetwarzania moich danych osobowych jak w&nbsp;<a href="RODO.docx" target="_blank">załączniku</a>.
+                                </div>
                             </div>
                         </div>
                         <div class="contact flex">
@@ -328,11 +332,27 @@
                                 <img src="images/envelope.png">
                                 <h1>Skontaktuj się</h1>
                             </div>
-                            <div class="contact-lines-wrapper">
-                                <div class="contact-line">
-                                    <label>Telefon</label>695 679 730</div>
-                                <div class="contact-line">
-                                    <label>E-mail</label>zus@dotacja-zus.pl</div>
+                            <div class="contact-lines-wrapper flex">
+                                <div class="flex-item-2">
+                                    <div class="contact-line">
+                                        <label>Adres</label><span class="white">MGMC sp. z&nbsp;o.o.</span></div>
+                                    <div class="contact-line">
+                                        <label></label><span class="white">ul. Żołnierzy I&nbsp;Armii Wojska</span></div>
+                                    <div class="contact-line">
+                                        <label></label><span class="white">Polskiego 10, lok. B6</span></div>
+                                    <div class="contact-line">
+                                        <label></label><span class="white">81-383 Gdynia</span></div>
+                                </div>
+                                <div class="flex-item-2">
+                                    <div class="contact-line">
+                                        <label>NIP</label><span class="white">5862339779</span></div>
+                                    <div class="contact-line">
+                                        <label>REGON</label><span class="white">382007760</span></div>
+                                    <div class="contact-line phone">
+                                        <label>Telefon</label><span class="white">+48 733 879 385</span></div>
+                                    <div class="contact-line">
+                                        <label>E-mail</label><span class="white">biuro@mgmc.info</span></div>
+                                </div>
                             </div>
                             <div class="send-btn-wrapper">
                                 <button type="submit" class="btn-send">Wyślij</button>
