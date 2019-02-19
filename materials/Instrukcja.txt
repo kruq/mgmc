@@ -1,0 +1,56 @@
+To jest skrypt do AnoMail Desktop umozliwiajacy
+wypisywanie/zapisywanie subskrybenta poprzez klikniecie 
+w link umieszczony w wiadomosci e-mail wyslanej z AnoMail.
+
+Otworz w Notatniku plik wypisz.php i zapoznaj sie
+z dolaczona do niego instrukcja (b. wazne).
+
+DODAWANIE ADRESOW Z REZYGNACJI NA LISTE ZASTRZEZONA
+===================================================
+
+W AnoMail osoby z rezygnacji mozna dodawac na liste zastrzezona
+uzywajac funkcji Subskrypcja -> Podglad listy subskrybentow
+potem prawy klawisz myszki i Dodaj rezygnacje do zastrzezonych
+
+Druga mozliwosc jest taka, ze w glownym oknie programu klikamy
+przycisk Zastrzezone i wybieramy Adresy... -> Importuj z uwag do rezygnacji
+
+Ta druga mozliwosc pozwala pobierac adresy z tresci wiadomosci
+czyli gdy klient w tresci listu poda kilka adresow na jakie
+nie chce otrzymywac poczty
+
+USUWANIE ADRESOW BEDACYCH NA LISCIE REZYGNACJI
+===============================================
+
+Przed wysylka nacisnij przycisk Porz¹dkuj i wybierz
+funkcje Usun zastrzezone adresy e-mail
+
+Dzieki temu program usunie z listy wysylkowej adresy
+ktore sa blokowane i niepotrzebnie zajmuja miejsce
+w Panstwa liscie wysylkowej
+
+WYKORZYSTANIE SKRYPTU DO ZAPISYWANIA
+====================================
+
+Analogicznie do wypisywania skrypt moze byc
+uzyty do zapisywania na liste mailingowa.
+
+Mozliwe jest to dzieki umieszczeniu dwoch 
+kopii skyptu na Panstwa serwerze. Jedna kopia
+obsluguje "Wyspisywanie" a druga "Zapisywanie". 
+
+Program AnoMail rozpoznaje "Zgody" i "Rezygnacje" 
+po temacie listu wyslanego przez skrypt na podany
+przez Panstwa adres e-mail.
+
+UWAGA: Zgodnie z obowiazujacym prawem w Polsce
+powyzsze rozwiazanie nie oferuje obslugi klauzul
+marketingowych.
+
+Patrz: Modul subskrypcji z obsluga klauzul:
+www.anomail.pl/subskrypcja_online.html
+
+
+Pozdrawiamy 
+Zespol AnoMail
+www.AnoMail.pl
