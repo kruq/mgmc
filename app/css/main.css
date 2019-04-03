@@ -212,7 +212,7 @@ section.menu .right nav ul li a.selected:after {
 section.hero {
     background-color: #00233b;
     color: white;
-    height: 700px;
+    height: 600px;
     display: flex;    
 }
 
@@ -225,6 +225,7 @@ section.hero .wrapper-center .container {
     background-image: url('../images/lighthouse.png');
     background-position: left top;
     background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 370px;
     height: 100%;
     width: 100%;
@@ -719,6 +720,7 @@ section.contact-form .rodo a:hover {
         margin-left: 0px;
         margin-right: 0px;
         padding: 15px; 
+        overflow: hidden;
     }   
     section.menu {
         padding-top: 20px;
@@ -763,7 +765,7 @@ section.contact-form .rodo a:hover {
     section.hero .wrapper-center .container {
         padding-left: 0px;
         margin-left: 0px;
-        height: auto;
+        height: 110%;
     }
     section.hero .left {
         width: 100%;
