@@ -698,7 +698,7 @@ section.contact-form .rodo a:hover {
 }
 
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
     html {
         font-size: 11px;
     }
@@ -765,7 +765,7 @@ section.contact-form .rodo a:hover {
     section.hero .wrapper-center .container {
         padding-left: 0px;
         margin-left: 0px;
-        height: 110%;
+        height: 85%;
     }
     section.hero .left {
         width: 100%;
