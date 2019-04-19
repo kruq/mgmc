@@ -335,7 +335,7 @@
                             <div class="contact-lines-wrapper flex">
                                 <div class="flex-item-2">
                                     <div class="contact-line">
-                                        <label>Adres</label><span class="white">MGMC sp. z&nbsp;o.o.</span></div>
+                                        <label>Adres</label><span class="white">MGM Consulting</span></div>
                                     <div class="contact-line">
                                         <label></label><span class="white">ul. Żołnierzy I&nbsp;Armii Wojska</span></div>
                                     <div class="contact-line">
@@ -345,9 +345,9 @@
                                 </div>
                                 <div class="flex-item-2">
                                     <div class="contact-line">
-                                        <label>NIP</label><span class="white">5862339779</span></div>
+                                        <label>NIP</label><span class="white">731-192-62-23</span></div>
                                     <div class="contact-line">
-                                        <label>REGON</label><span class="white">382007760</span></div>
+                                        <label>REGON</label><span class="white">100907910</span></div>
                                     <div class="contact-line phone">
                                         <label>Telefon</label><span class="white">+48 733 879 385</span></div>
                                     <div class="contact-line">
